@@ -30,10 +30,35 @@ namespace API.Controllers
             StreamReader r = new StreamReader("Model/Json/movies.json");
             string jsonString = r.ReadToEnd();
             var dataObj = JObject.Parse(jsonString);
+            // var dataObj = JsonConvert.DeserializeObject<JObject>(jsonString);
+            // Media dataObj = JsonConvert.DeserializeObject<Media>(jsonString);
+            // List<JObject> mediaList = new List<JObject>();
 
+            // mediaList.Add(dataObj);
+
+            // foreach (var data in mediaList)
+            // {
+            //     foreach (var test in data["results"])
+            //     {
+            //         var response = new VisualMedia
+            //         {
+            //             title = $"{test["title"]}",
+            //             overview = $"{test["overview"]}",
+            //             poster_path = $"{test["poster_path"]}",
+            //             vote_average = 5.5F,
+            //             release_date = $"{test["release_date"]}",
+            //         };
+            //         return Ok(response);
+            //     }
+
+
+            // }
             foreach (var result in dataObj["results"])
             {
+
+
                 var vote = float.Parse($"{result["vote_average"]}", CultureInfo.InvariantCulture.NumberFormat);
+
                 var response = new VisualMedia
                 {
                     title = $"{result["title"]}",
@@ -43,25 +68,15 @@ namespace API.Controllers
                     release_date = $"{result["release_date"]}",
                 };
 
+
+
                 // _db.Medias.Add(response);
                 // _db.SaveChanges();
 
                 return Ok(response);
-            }
-            // var dataObj = JsonSerializer.Deserialize<JObject>(jsonString);
 
-            // foreach (KeyValuePair<string, JToken> item in dataObj)
-            // {
-            //     int iKey = 0;
-            //     string key = item.Key;
-            //     JToken jToken = item.Value;
-            //     if (int.TryParse(key, out iKey))
-            //     {
-            //         string value = jToken.ToString();
-            //         Console.WriteLine(key + "--" + value);
-            //         return Ok(value);
-            //     }
-            // }
+            }
+
 
             return Ok("Fail");
 
