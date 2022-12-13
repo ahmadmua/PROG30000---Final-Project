@@ -14,6 +14,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 
+
  builder.Services.AddEntityFrameworkSqlite().AddDbContext<DataContext>();
 
  builder.Services.AddIdentityCore<AppUser>(options =>
@@ -41,8 +42,17 @@ builder.Services.AddScoped<TokenService>();
  });
 
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AcceptAllPolicy", policy =>
+    {
+        policy.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin();
+    });
+});
+
 
 var app = builder.Build();
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -50,6 +60,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors("AcceptAllPolicy");
 
 app.UseAuthorization();
 
