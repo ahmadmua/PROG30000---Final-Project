@@ -73,3 +73,4 @@
 /Users/cammisuli/Documents/SheridanF22_23/Enterprise/PROG30000---Final-Project/API/obj/Debug/net6.0/API.genruntimeconfig.cache
 /Users/cammisuli/Documents/SheridanF22_23/Enterprise/PROG30000---Final-Project/API/obj/Debug/net6.0/ref/API.dll
 /Users/cammisuli/Documents/SheridanF22_23/Enterprise/PROG30000---Final-Project/API/bin/Debug/net6.0/Newtonsoft.Json.dll
+/Users/cammisuli/Documents/SheridanF22_23/Enterprise/PROG30000---Final-Project/API/bin/Debug/net6.0/Model/Json/movies.json
