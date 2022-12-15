@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/cammisuli/Documents/SheridanF22_23/Enterprise/PROG30000---Final-Project/API/API.csproj": {}
+    "C:\\Users\\Muaz6\\Muaz-PC\\Desktop\\PROG30000---Final-Project-main\\API\\API.csproj": {}
   },
   "projects": {
-    "/Users/cammisuli/Documents/SheridanF22_23/Enterprise/PROG30000---Final-Project/API/API.csproj": {
+    "C:\\Users\\Muaz6\\Muaz-PC\\Desktop\\PROG30000---Final-Project-main\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/cammisuli/Documents/SheridanF22_23/Enterprise/PROG30000---Final-Project/API/API.csproj",
+        "projectUniqueName": "C:\\Users\\Muaz6\\Muaz-PC\\Desktop\\PROG30000---Final-Project-main\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "/Users/cammisuli/Documents/SheridanF22_23/Enterprise/PROG30000---Final-Project/API/API.csproj",
-        "packagesPath": "/Users/cammisuli/.nuget/packages/",
-        "outputPath": "/Users/cammisuli/Documents/SheridanF22_23/Enterprise/PROG30000---Final-Project/API/obj/",
+        "projectPath": "C:\\Users\\Muaz6\\Muaz-PC\\Desktop\\PROG30000---Final-Project-main\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\Muaz6\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Muaz6\\Muaz-PC\\Desktop\\PROG30000---Final-Project-main\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/cammisuli/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Muaz6\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -38,9 +38,35 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.11, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.25.1, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.25.1, )"
             }
           },
           "imports": [
@@ -62,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     }
