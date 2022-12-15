@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "/Users/cammisuli/Documents/SheridanF22_23/Enterprise/PROG30000---Final-Project/API/API.csproj": {}
+    "G:\\Users\\jorda\\Desktop\\MovieDatabase_FinalProject\\API\\API.csproj": {}
   },
   "projects": {
-    "/Users/cammisuli/Documents/SheridanF22_23/Enterprise/PROG30000---Final-Project/API/API.csproj": {
+    "G:\\Users\\jorda\\Desktop\\MovieDatabase_FinalProject\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/cammisuli/Documents/SheridanF22_23/Enterprise/PROG30000---Final-Project/API/API.csproj",
+        "projectUniqueName": "G:\\Users\\jorda\\Desktop\\MovieDatabase_FinalProject\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "/Users/cammisuli/Documents/SheridanF22_23/Enterprise/PROG30000---Final-Project/API/API.csproj",
-        "packagesPath": "/Users/cammisuli/.nuget/packages/",
-        "outputPath": "/Users/cammisuli/Documents/SheridanF22_23/Enterprise/PROG30000---Final-Project/API/obj/",
+        "projectPath": "G:\\Users\\jorda\\Desktop\\MovieDatabase_FinalProject\\API\\API.csproj",
+        "packagesPath": "G:\\Users\\jorda\\.nuget\\packages\\",
+        "outputPath": "G:\\Users\\jorda\\Desktop\\MovieDatabase_FinalProject\\API\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "G:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/cammisuli/.nuget/NuGet/NuGet.Config"
+          "G:\\Users\\jorda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "G:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "G:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "G:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -45,6 +51,10 @@
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Analyzers": {
+              "target": "Package",
+              "version": "[7.0.1, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -88,7 +98,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "G:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

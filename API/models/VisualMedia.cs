@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace API.models
 {
-    public interface VisualMedia
+    public abstract class VisualMedia
     {
         public Guid Id { get; set; }
         public string Title { get; set; }

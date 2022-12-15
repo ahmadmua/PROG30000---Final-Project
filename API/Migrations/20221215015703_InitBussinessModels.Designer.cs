@@ -3,6 +3,7 @@ using System;
 using API.models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace API.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20221215015703_InitBussinessModels")]
+    partial class InitBussinessModels
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.0");
@@ -50,7 +53,7 @@ namespace API.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Movies");
+                    b.ToTable("Users");
                 });
 
             modelBuilder.Entity("API.Models.TVShow", b =>
@@ -89,7 +92,7 @@ namespace API.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Shows");
+                    b.ToTable("Images");
                 });
 
             modelBuilder.Entity("API.models.AppUser", b =>

@@ -141,7 +141,7 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Analyzers/7.0.0": {
+      "Microsoft.EntityFrameworkCore.Analyzers/7.0.1": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/_._": {}
@@ -1146,17 +1146,17 @@
         "microsoft.entityframeworkcore.abstractions.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Analyzers/7.0.0": {
-      "sha512": "Qkd2H+jLe37o5ku+LjT6qf7kAHY75Yfn2bBDQgqr13DTOLYpEy1Mt93KPFjaZvIu/srEcbfGGMRL7urKm5zN8Q==",
+    "Microsoft.EntityFrameworkCore.Analyzers/7.0.1": {
+      "sha512": "4A4NFkPFoRMdry24Hjdb5/sOH3tU3hzFePTGnSg8P+VBrFp/EO8kcA4L0hBzwbXj2HGNL8I/quYyS5GVtb4EOg==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.analyzers/7.0.0",
+      "path": "microsoft.entityframeworkcore.analyzers/7.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "analyzers/dotnet/cs/Microsoft.EntityFrameworkCore.Analyzers.dll",
         "lib/netstandard2.0/_._",
-        "microsoft.entityframeworkcore.analyzers.7.0.0.nupkg.sha512",
+        "microsoft.entityframeworkcore.analyzers.7.0.1.nupkg.sha512",
         "microsoft.entityframeworkcore.analyzers.nuspec"
       ]
     },
@@ -2373,6 +2373,7 @@
     "net6.0": [
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 6.0.11",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 6.0.11",
+      "Microsoft.EntityFrameworkCore.Analyzers >= 7.0.1",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.0",
       "Microsoft.EntityFrameworkCore.Sqlite >= 7.0.0",
       "Microsoft.IdentityModel.Tokens >= 6.25.1",
@@ -2381,24 +2382,31 @@
     ]
   },
   "packageFolders": {
-    "/Users/cammisuli/.nuget/packages/": {}
+    "G:\\Users\\jorda\\.nuget\\packages\\": {},
+    "G:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/cammisuli/Documents/SheridanF22_23/Enterprise/PROG30000---Final-Project/API/API.csproj",
+      "projectUniqueName": "G:\\Users\\jorda\\Desktop\\MovieDatabase_FinalProject\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "/Users/cammisuli/Documents/SheridanF22_23/Enterprise/PROG30000---Final-Project/API/API.csproj",
-      "packagesPath": "/Users/cammisuli/.nuget/packages/",
-      "outputPath": "/Users/cammisuli/Documents/SheridanF22_23/Enterprise/PROG30000---Final-Project/API/obj/",
+      "projectPath": "G:\\Users\\jorda\\Desktop\\MovieDatabase_FinalProject\\API\\API.csproj",
+      "packagesPath": "G:\\Users\\jorda\\.nuget\\packages\\",
+      "outputPath": "G:\\Users\\jorda\\Desktop\\MovieDatabase_FinalProject\\API\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "G:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/Users/cammisuli/.nuget/NuGet/NuGet.Config"
+        "G:\\Users\\jorda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "G:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "G:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "G:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2424,6 +2432,10 @@
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
             "target": "Package",
             "version": "[6.0.11, )"
+          },
+          "Microsoft.EntityFrameworkCore.Analyzers": {
+            "target": "Package",
+            "version": "[7.0.1, )"
           },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -2467,7 +2479,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "G:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
