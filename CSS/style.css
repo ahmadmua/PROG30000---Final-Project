@@ -1,0 +1,9 @@
+
+
+  #image-back {
+    background-image: url('../Views/images/movies.jpg');
+  }
+
+ #login, #register {
+  margin-top: 50px;
+ }
