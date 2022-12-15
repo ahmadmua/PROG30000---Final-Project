@@ -2381,16 +2381,11 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
     "C:\\Users\\Muaz6\\.nuget\\packages\\": {}
-=======
-    "/Users/cammisuli/.nuget/packages/": {}
->>>>>>> main
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Muaz6\\Muaz-PC\\Desktop\\PROG30000---Final-Project-main\\API\\API.csproj",
       "projectName": "API",
       "projectPath": "C:\\Users\\Muaz6\\Muaz-PC\\Desktop\\PROG30000---Final-Project-main\\API\\API.csproj",
@@ -2399,16 +2394,6 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Muaz6\\AppData\\Roaming\\NuGet\\NuGet.Config"
-=======
-      "projectUniqueName": "/Users/cammisuli/Documents/SheridanF22_23/Enterprise/PROG30000---Final-Project/API/API.csproj",
-      "projectName": "API",
-      "projectPath": "/Users/cammisuli/Documents/SheridanF22_23/Enterprise/PROG30000---Final-Project/API/API.csproj",
-      "packagesPath": "/Users/cammisuli/.nuget/packages/",
-      "outputPath": "/Users/cammisuli/Documents/SheridanF22_23/Enterprise/PROG30000---Final-Project/API/obj/",
-      "projectStyle": "PackageReference",
-      "configFilePaths": [
-        "/Users/cammisuli/.nuget/NuGet/NuGet.Config"
->>>>>>> main
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -2482,12 +2467,16 @@
             "privateAssets": "all"
           }
         },
-<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.404\\RuntimeIdentifierGraph.json"
-=======
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
->>>>>>> main
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\Muaz6\\Muaz-PC\\Desktop\\PROG30000---Final-Project-main\\API\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
