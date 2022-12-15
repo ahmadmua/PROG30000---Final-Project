@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using API.models;
 using API.models.DTOs;
@@ -47,6 +48,15 @@ namespace API.Controllers
             
         }
 
+        [HttpGet("username")]
+        public async Task<IActionResult> GetUserName(){
+
+            var user = await _userManager.FindByEmailAsync(User.FindFirstValue(ClaimTypes.Email));
+            return Ok(user);
+
+        }
+
+
         [HttpPost("login")]
         public async Task<IActionResult> LoginAsync(LoginDto loginDto){
 
@@ -59,6 +69,7 @@ namespace API.Controllers
             var result = await _signInManager.CheckPasswordSignInAsync(user, loginDto.Password, false);
 
             if(result.Succeeded){
+                
                 return Ok(_tokenService.CreateToken(user));
             }
 

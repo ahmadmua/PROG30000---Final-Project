@@ -63,6 +63,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseCors("AcceptAllPolicy");
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

@@ -11,5 +11,15 @@ document.getElementById("registerBtn")
             password: document.getElementById("typePassword").value,
             username: document.getElementById("typeUsername").value,
         })
-    })
+    }).then(res => {
+            
+        if(res.ok) {
+          
+           alert("User successfully registered")
+       
+        } else{
+       
+            res.text().then(text => alert(text))
+        }
+      })
 })

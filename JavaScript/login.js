@@ -15,7 +15,8 @@
         }).then(res => {
             
             if(res.ok) {
-              
+                
+                res.text().then(text => localStorage.setItem("Token", text))
                 window.location.href = "../Views/index.html"
            
             } else{
