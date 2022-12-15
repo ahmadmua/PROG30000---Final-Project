@@ -40,7 +40,22 @@
               <li class="nav-item">
                 <a class="nav-link text-light" href="#">Watch List</a>
               </li>
+
             </ul>
+
+            <div style="color: white; padding-right: 30px;" >
+              Hello, <span id="loggedInUserName"></span>
+            </div>
+
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Account
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <a href="../Views/login.html" class="dropdown-item" id="signOutBtn" type="button">Sign Out</a>
+              </div>
+            </div>
+
             <form class="d-flex" role="search">
                 <div class="input-group px-3">
                     <span class="input-group-text">
@@ -352,5 +367,7 @@
             
         </div>
     </div>
+    <script src="../JavaScript/getUserInfo.js"></script>
+    
 </body>
 </html>

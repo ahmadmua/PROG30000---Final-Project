@@ -51,13 +51,14 @@ namespace API.Controllers
         [HttpGet("username")]
         public async Task<IActionResult> GetUserName(){
 
-            var user = await _userManager.FindByEmailAsync(User.FindFirstValue(ClaimTypes.Email));
-            return Ok(user);
+           // var user = await _userManager.FindByEmailAsync(User.FindFirstValue(ClaimTypes.Email));
+           string? userId = User.FindFirst(ClaimTypes.Name)?.Value;
+            return Ok(userId);
 
         }
 
 
-        [HttpPost("login")]
+    [HttpPost("login")]
         public async Task<IActionResult> LoginAsync(LoginDto loginDto){
 
             var user = await _userManager.FindByEmailAsync(loginDto.Email);
