@@ -1,0 +1,69 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.navbar{
+    height: 125px;
+    background-color: #212529;
+    position: fixed;
+    top: 0;
+    padding-left: 50px;
+    padding-right: 100px;
+    
+}
+
+
+.navGroup{
+    
+    position: fixed;
+    top: 40px;
+    left: 60em;
+}
+
+.movieBox{
+    margin-top: 12em;
+    display: grid;
+    background: rgba(40, 42, 44, 0.9);
+    height: max-content;
+    border-radius: 1%;
+}
+
+.movieCarousel{
+    padding-top: 50px;
+    width: 1000px;
+    margin-bottom: 50px;
+}
+
+.carousel-indicators{
+    position:absolute;
+    top: 300px;
+}
+
+button.movieCarouselbuttonLeft{
+    position: absolute;
+    left:-100px;
+    padding-right: 40px;
+}
+
+
+button.movieCarouselbuttonRight{
+    position: absolute;
+    right:-100px;
+    
+}
+
+body{
+    background-image: url( "assets/movies.jpg");
+}
+
+@media only screen and (max-width: 1200px){
+    
+
+    .navbar{
+        padding-right: 50px;
+        padding-left: 50px;
+        font-size: 3em;
+    }
+
+}
