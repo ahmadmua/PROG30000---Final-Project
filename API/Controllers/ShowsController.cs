@@ -24,20 +24,24 @@ namespace API.Controllers
         [HttpPost]
         public IActionResult PopulateShows(Root results)
         {
-           
-            var movieList = new List<TVShow>();
+            foreach (var show in results.results)
+            {
+                var newShow = new TVShow{
+                    Title = show.Title,
+                    Genre = show.Genre,
+                    Release_date = show.Release_date,
+                    Vote_average = (float?)show.vote_average,
+                    Poster_path = show.poster_path,
+                    Overview = show.Overview
+                };
 
-            
+                _database.Shows.Add(newShow);
+            }
+
+            _database.SaveChanges();
 
             return Ok();
-
-
             
-
-
-
-
-
         }
 
     }
