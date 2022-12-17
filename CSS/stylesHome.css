@@ -1,27 +1,27 @@
-*{
+* {
     font-family: 'Montserrat', sans-serif;
 }
 
 
-.navbar{
+.navbar {
     height: 125px;
     background-color: #212529;
     position: fixed;
     top: 0;
     padding-left: 50px;
     padding-right: 100px;
-    
+
 }
 
 
-.navGroup{
-    
+.navGroup {
+
     position: fixed;
     top: 40px;
     left: 60em;
 }
 
-.movieBox{
+.movieBox {
     margin-top: 12em;
     display: grid;
     background: rgba(40, 42, 44, 0.9);
@@ -29,41 +29,49 @@
     border-radius: 1%;
 }
 
-.movieCarousel{
+.movieCarousel {
     padding-top: 50px;
     width: 1000px;
     margin-bottom: 50px;
 }
 
-.carousel-indicators{
-    position:absolute;
+.carousel-indicators {
+    position: absolute;
     top: 300px;
 }
 
-button.movieCarouselbuttonLeft{
+button.movieCarouselbuttonLeft {
     position: absolute;
-    left:-100px;
+    left: -100px;
     padding-right: 40px;
 }
 
 
-button.movieCarouselbuttonRight{
+button.movieCarouselbuttonRight {
     position: absolute;
-    right:-100px;
-    
+    right: -100px;
+
 }
 
-body{
-    background-image: url( "assets/movies.jpg");
+body {
+    background-image: url("assets/movies.jpg");
 }
 
-@media only screen and (max-width: 1200px){
-    
+@media only screen and (max-width: 1200px) {
 
-    .navbar{
+
+    .navbar {
         padding-right: 50px;
         padding-left: 50px;
         font-size: 3em;
     }
 
+}
+
+.divTop {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    /* padding-left: 2em; */
+    color: white;
+    font-size: xx-large;
 }
