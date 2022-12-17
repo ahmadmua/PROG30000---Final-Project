@@ -14,7 +14,18 @@ document.getElementById("submit")
                 runtime: document.getElementById("runtime").value
             })
         })
-            .then(response => response.json())
+            // .then(response => response.json())
+            .then(res => {
+
+                if (res.ok) {
+
+                    alert("Movie was added!")
+
+                } else {
+
+                    res.text().then(text => alert(text))
+                }
+            })
 
 
         //TODO: update the UI to include the new item
