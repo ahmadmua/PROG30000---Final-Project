@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "KI5vB+nvt59EsL0ea3nonUoOuJSLbUR3IUa0hcqplO8eTCNyx9Vj/73YM1JIkpD2BeXjWLXQSckWQFttq5ZeNw==",
+  "dgSpecHash": "pOywWfdiKoPkan5d3h4VPddlDALV1wrn00w/vB+giUPvsaaea6U2DXrCG76SGDKPR4hZT3pF/Jfo0d8j5bREiQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Muaz6\\Muaz-PC\\Desktop\\PROG30000---Final-Project-main\\API\\API.csproj",
   "expectedPackageFiles": [
@@ -13,7 +13,7 @@
     "C:\\Users\\Muaz6\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.0\\microsoft.data.sqlite.core.7.0.0.nupkg.sha512",
     "C:\\Users\\Muaz6\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.0\\microsoft.entityframeworkcore.7.0.0.nupkg.sha512",
     "C:\\Users\\Muaz6\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.0\\microsoft.entityframeworkcore.abstractions.7.0.0.nupkg.sha512",
-    "C:\\Users\\Muaz6\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.0\\microsoft.entityframeworkcore.analyzers.7.0.0.nupkg.sha512",
+    "C:\\Users\\Muaz6\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.1\\microsoft.entityframeworkcore.analyzers.7.0.1.nupkg.sha512",
     "C:\\Users\\Muaz6\\.nuget\\packages\\microsoft.entityframeworkcore.design\\7.0.0\\microsoft.entityframeworkcore.design.7.0.0.nupkg.sha512",
     "C:\\Users\\Muaz6\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.0\\microsoft.entityframeworkcore.relational.7.0.0.nupkg.sha512",
     "C:\\Users\\Muaz6\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite\\7.0.0\\microsoft.entityframeworkcore.sqlite.7.0.0.nupkg.sha512",
@@ -59,12 +59,5 @@
     "C:\\Users\\Muaz6\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\Muaz6\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\Muaz6\\Muaz-PC\\Desktop\\PROG30000---Final-Project-main\\API\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

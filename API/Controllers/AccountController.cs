@@ -51,8 +51,9 @@ namespace API.Controllers
         [HttpGet("username")]
         public async Task<IActionResult> GetUserName(){
 
-            var user = await _userManager.FindByEmailAsync(User.FindFirstValue(ClaimTypes.Email));
-            return Ok(user);
+           // var user = await _userManager.FindByEmailAsync(User.FindFirstValue(ClaimTypes.Email));
+           string? userId = User.FindFirst(ClaimTypes.Name)?.Value;
+            return Ok(userId);
 
         }
 
