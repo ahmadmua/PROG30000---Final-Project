@@ -45,7 +45,7 @@ namespace API.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<float>("Vote_average")
+                    b.Property<float?>("Vote_average")
                         .HasColumnType("REAL");
 
                     b.HasKey("Id");
@@ -84,7 +84,7 @@ namespace API.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<float>("Vote_average")
+                    b.Property<float?>("Vote_average")
                         .HasColumnType("REAL");
 
                     b.HasKey("Id");
