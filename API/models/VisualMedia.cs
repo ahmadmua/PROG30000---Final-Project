@@ -11,7 +11,7 @@ namespace API.models
         public string Title { get; set; }
         public string Overview { get; set; }
         public string Release_date { get; set; }
-        public float Vote_average { get; set; }
+        public float? Vote_average { get; set; }
         public string? Poster_path { get; set; }
         public string Genre { get; set; }
     }
