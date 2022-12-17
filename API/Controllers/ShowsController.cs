@@ -22,9 +22,9 @@ namespace API.Controllers
         }
 
         [HttpPost]
-        public IActionResult PopulateShows(Root results)
+        public IActionResult PopulateShows(Root result)
         {
-            foreach (var show in results.results)
+            foreach (var show in result.results)
             {
                 var newShow = new TVShow{
                     Title = show.Title,
@@ -32,7 +32,9 @@ namespace API.Controllers
                     Release_date = show.Release_date,
                     Vote_average = (float?)show.vote_average,
                     Poster_path = show.poster_path,
-                    Overview = show.Overview
+                    Overview = show.Overview,
+                    Episodes = show.Episodes,
+                    Seasons = show.Seasons
                 };
 
                 _database.Shows.Add(newShow);
@@ -43,6 +45,21 @@ namespace API.Controllers
             return Ok();
             
         }
+
+        [HttpGet]
+        public IActionResult DeleteShows()
+        {
+            foreach (var show in _database.Shows)
+            {
+                _database.Shows.RemoveRange(show);
+            }
+
+            _database.SaveChanges();
+
+            return Ok();
+            
+        }
+
 
     }
 }

@@ -13,6 +13,10 @@ namespace API.Models.DTOs
         public string Overview { get; set; }
         public string poster_path { get; set; }
         public double vote_average { get; set; }
+        public int Episodes { get; set; }
+        public int Seasons { get; set; }
+
+
     }
 
     public class Root
