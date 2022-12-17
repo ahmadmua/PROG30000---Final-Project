@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "eZKfrNef1s7EWY4WVZa4H44wskW0ZD6MHb8goEZ2oVT8dazatyMrN5b2zr+9xvv7DlB7/mx64usS5cAZzuoU8w==",
+  "dgSpecHash": "Sthf4LsrjeivQeR37vpnR/hgEx7mCexePlnEszoJhI0z8W/e3VjBIip/JjPfDHqjPcr3HkeiC2ARbcraGNr5VA==",
   "success": true,
   "projectFilePath": "G:\\Users\\jorda\\Desktop\\MovieDatabase_FinalProject\\API\\API.csproj",
   "expectedPackageFiles": [
@@ -41,6 +41,7 @@
     "G:\\Users\\jorda\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "G:\\Users\\jorda\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "G:\\Users\\jorda\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "G:\\Users\\jorda\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
     "G:\\Users\\jorda\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.2\\sqlitepclraw.bundle_e_sqlite3.2.1.2.nupkg.sha512",
     "G:\\Users\\jorda\\.nuget\\packages\\sqlitepclraw.core\\2.1.2\\sqlitepclraw.core.2.1.2.nupkg.sha512",
     "G:\\Users\\jorda\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.2\\sqlitepclraw.lib.e_sqlite3.2.1.2.nupkg.sha512",
