@@ -1,3 +1,4 @@
+//Author Jordan Bhar
 document.addEventListener("DOMContentLoaded", (event) => {
     fetch("http://localhost:5117/api/shows", {
           method: "GET",

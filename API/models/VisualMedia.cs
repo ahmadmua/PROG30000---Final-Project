@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace API.models
 {
+    //Author Nicholas Cammisuli
     public abstract class VisualMedia
     {
         public Guid Id { get; set; }

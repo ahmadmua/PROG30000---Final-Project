@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace API.models
 {
+    //Author Nicholas Cammisuli
     public class MediaLists
     {
         public Guid Id { get; set; }

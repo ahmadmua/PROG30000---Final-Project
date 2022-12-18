@@ -6,6 +6,7 @@ using API.models;
 
 namespace API.Models
 {
+    //Author Jordan Bhar
     public class TVShow : VisualMedia
     {
         public int Episodes { get; set; }

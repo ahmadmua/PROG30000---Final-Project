@@ -1,3 +1,5 @@
+//Author  Nicholas Cammisuli
+
 document.getElementById("submit")
     .addEventListener('click', () => {
         //do a post request to the API

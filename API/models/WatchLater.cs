@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace API.models
 {
+    //Author Nicholas Cammisuli
     public class WatchLater
     {
         public Guid Id { get; set; }

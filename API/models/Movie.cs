@@ -6,6 +6,7 @@ using API.models;
 
 namespace API.Models
 {
+    //Author Jordan Bhar
     public class Movie : VisualMedia
     {
         public int Runtime { get; set; }

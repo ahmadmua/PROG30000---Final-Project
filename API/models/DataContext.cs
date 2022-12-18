@@ -2,6 +2,7 @@ using API.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
+//Author Muaz Ahmad & Jordan Bhar & Nicholas Cammisuli
 namespace API.models
 {
     public class DataContext : IdentityDbContext<AppUser>

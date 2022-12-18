@@ -7,6 +7,7 @@ using API.models;
 using API.Models;
 using Microsoft.AspNetCore.Mvc;
 
+//Author: Jordan Bhar
 namespace API.Controllers
 {
     [ApiController]

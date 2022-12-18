@@ -1,4 +1,4 @@
-
+//Author Nicholas Cammisuli
 
 document.addEventListener("DOMContentLoaded", (event) => {
     fetch("http://localhost:5117/api/media/favorites", {

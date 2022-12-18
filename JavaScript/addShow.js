@@ -1,3 +1,4 @@
+//Author Jordan Bhar
 document.getElementById("submit")
     .addEventListener('click', () => {
         //do a post request to the API

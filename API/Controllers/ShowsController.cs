@@ -9,6 +9,7 @@ using API.Models.DTOs;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
+//Author: Jordan Bhar
 namespace API.Controllers
 {
     [ApiController]

@@ -8,6 +8,7 @@ using API.models.DTOs;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
+//Author: Muaz Ahmad
 namespace API.Controllers
 {
     [ApiController]

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+//Author Jordan Bhar
+//used this to populate the database initialy never used again for main functonalities 
 namespace API.Models.DTOs
 {
         public class Result

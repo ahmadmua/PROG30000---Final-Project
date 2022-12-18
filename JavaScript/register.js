@@ -1,3 +1,4 @@
+//Author Muaz Ahmad
 document.getElementById("registerBtn")
 .addEventListener('click', () => {
 

@@ -8,6 +8,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.Threading.Tasks;
 using System.IdentityModel.Tokens.Jwt;
 
+//Author Muaz Ahmad
 namespace API.models
 {
     public class TokenService
