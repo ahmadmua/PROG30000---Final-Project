@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Muaz6\\Muaz-PC\\Desktop\\C# Final Project Most UPDATED\\PROG30000---Final-Project\\API\\API.csproj": {}
+    "C:\\Users\\Muaz6\\Muaz-PC\\Desktop\\C# Most UPDATED\\PROG30000---Final-Project\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Muaz6\\Muaz-PC\\Desktop\\C# Final Project Most UPDATED\\PROG30000---Final-Project\\API\\API.csproj": {
+    "C:\\Users\\Muaz6\\Muaz-PC\\Desktop\\C# Most UPDATED\\PROG30000---Final-Project\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Muaz6\\Muaz-PC\\Desktop\\C# Final Project Most UPDATED\\PROG30000---Final-Project\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\Muaz6\\Muaz-PC\\Desktop\\C# Most UPDATED\\PROG30000---Final-Project\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\Muaz6\\Muaz-PC\\Desktop\\C# Final Project Most UPDATED\\PROG30000---Final-Project\\API\\API.csproj",
+        "projectPath": "C:\\Users\\Muaz6\\Muaz-PC\\Desktop\\C# Most UPDATED\\PROG30000---Final-Project\\API\\API.csproj",
         "packagesPath": "C:\\Users\\Muaz6\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Muaz6\\Muaz-PC\\Desktop\\C# Final Project Most UPDATED\\PROG30000---Final-Project\\API\\obj\\",
+        "outputPath": "C:\\Users\\Muaz6\\Muaz-PC\\Desktop\\C# Most UPDATED\\PROG30000---Final-Project\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Muaz6\\AppData\\Roaming\\NuGet\\NuGet.Config"
