@@ -59,6 +59,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
                         card[i].childNodes[3].childNodes[3].textContent = `Overview: ${text[i].overview}`
                         card[i].childNodes[3].childNodes[5].textContent = `Popularity: ${text[i].vote_average}`
                         card[i].childNodes[3].childNodes[7].textContent = `Release Date: ${text[i].release_date}`
+                        card[i].childNodes[3].childNodes[8].textContent = `Episodes: ${text[i].episodes}`
+                        card[i].childNodes[3].childNodes[9].textContent = `Seasons: ${text[i].seasons}`
                     }
                 });
             })

@@ -8,17 +8,9 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = API
 build_property.RootNamespace = API
-<<<<<<< HEAD
-build_property.ProjectDir = G:\Users\jorda\Desktop\MovieDatabase_FinalProject\API\
+build_property.ProjectDir = g:\Users\jorda\Desktop\MovieDatabase_FinalProject\API\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = G:\Users\jorda\Desktop\MovieDatabase_FinalProject\API
-=======
-build_property.ProjectDir = C:\Users\Muaz6\Muaz-PC\Desktop\C# Most UPDATED\PROG30000---Final-Project\API\
-build_property.RazorLangVersion = 6.0
-build_property.SupportLocalizedComponentNames = 
-build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Muaz6\Muaz-PC\Desktop\C# Most UPDATED\PROG30000---Final-Project\API
->>>>>>> e1dccc97b44d022340cd568d33f27e4c94fcb595
+build_property.MSBuildProjectDirectory = g:\Users\jorda\Desktop\MovieDatabase_FinalProject\API
 build_property._RazorSourceGeneratorDebug = 
