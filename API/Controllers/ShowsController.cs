@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using API.models;
 using API.Models;
@@ -21,44 +22,68 @@ namespace API.Controllers
             _database = database;
         }
 
-        [HttpPost]
-        public IActionResult PopulateShows(Root result)
-        {
-            foreach (var show in result.results)
-            {
-                var newShow = new TVShow{
-                    Title = show.Title,
-                    Genre = show.Genre,
-                    Release_date = show.Release_date,
-                    Vote_average = (float?)show.vote_average,
-                    Poster_path = show.poster_path,
-                    Overview = show.Overview,
-                    Episodes = show.Episodes,
-                    Seasons = show.Seasons
-                };
+        // [HttpPost]
+        // public IActionResult PopulateShows(Root result)
+        // {
+        //     foreach (var show in result.results)
+        //     {
+        //         var newShow = new TVShow{
+        //             Title = show.Title,
+        //             Genre = show.Genre,
+        //             Release_date = show.Release_date,
+        //             Vote_average = (float?)show.vote_average,
+        //             Poster_path = show.poster_path,
+        //             Overview = show.Overview,
+        //             Episodes = show.Episodes,
+        //             Seasons = show.Seasons
+        //         };
 
-                _database.Shows.Add(newShow);
-            }
+        //         _database.Shows.Add(newShow);
+        //     }
 
-            _database.SaveChanges();
+        //     _database.SaveChanges();
 
-            return Ok();
+        //     return Ok();
             
+        // }
+
+        [HttpPost("add")]
+        public async Task<IActionResult> AddShowToDbAsync(TVShow show)
+        {
+            string pattern = @"^\d{4}\-(0?[1-9]|1[012])\-(0?[1-9]|[12][0-9]|3[01])$";
+            try
+            {
+                if (string.IsNullOrEmpty(show.Title))
+                    return BadRequest("Title can't be empty");
+
+                if (Regex.Match(show.Release_date, pattern).Success)
+                {
+
+                    if (_database.Movies.Any(x => x.Title == show.Title) & _database.Movies.Any(x => x.Release_date == show.Release_date))
+                    {
+                        return BadRequest("Movie already exists");
+                    }
+
+                    await _database.Shows.AddAsync(show);
+                    await _database.SaveChangesAsync();
+                    return Ok(show);
+                }
+
+                return BadRequest("Please use 'YYYY-MM-DD' format");
+
+            }
+            catch (System.Exception)
+            {
+                return BadRequest();
+            }
         }
 
         [HttpGet]
-        public IActionResult DeleteShows()
+        public async Task<IActionResult> GetAllShows()
         {
-            foreach (var show in _database.Shows)
-            {
-                _database.Shows.RemoveRange(show);
-            }
-
-            _database.SaveChanges();
-
-            return Ok();
-            
+            return Ok(_database.Shows);
         }
+
 
 
     }

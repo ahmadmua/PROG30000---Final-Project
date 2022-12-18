@@ -17,7 +17,7 @@
             if(res.ok) {
                 
                 res.text().then(text => localStorage.setItem("Token", text))
-                window.location.href = "../Views/index.html"
+                window.location.href = "../Views/browseMovies.html"
                 function preventBack() { window.history.forward(); }  
                 setTimeout(preventBack(), 0);  
                 window.onunload = function () { null };  

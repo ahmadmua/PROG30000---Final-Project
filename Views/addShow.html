@@ -14,7 +14,7 @@
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
     <link href="../CSS/stylesHome.css" rel="stylesheet">
-    <title>Watch Later</title>
+    <title>AddShow</title>
 </head>
 
 <body>
@@ -81,19 +81,60 @@
         </div>
     </nav>
 
-    <div class="movieBox">
+
+    <div class="movieBox p-4 mx-4">
         <div id="" class="container">
             <div class="row">
-                <div class="col-6 divTop">
-                    Display all Watch later movies from users
-                </div>
-                <div class="col-6 divTop">
-                    Display all Watch later movies from users
-                </div>
+                <div class="col"></div>
+                <div class="col-10">
+                    <form>
+                        <div class="form-group">
+                            <label for="title">Show Title</label>
+                            <input type="text" class="form-control" id="title" placeholder="Type here...">
+                        </div>
 
+                        <div class="form-group">
+                            <label for="overview">Description</label>
+                            <textarea class="form-control" id="overview" rows="3" placeholder="Type here..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="release_date">Release Date</label>
+                            <input type="text" class="form-control" id="release_date" placeholder="YYYY-MM-DD">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="genre">Genre</label>
+                            <input type="text" class="form-control" id="genre" placeholder="Type here...">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="runtime">Episodes</label>
+                            <input type="text" class="form-control" id="runtime"
+                                placeholder="Runtime in minutes (ex. 120)...">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="runtime">Seaons</label>
+                            <input type="text" class="form-control" id="runtime"
+                                placeholder="Runtime in minutes (ex. 120)...">
+                        </div>
+
+                        <!-- <div class="form-group">
+                            <label for="exampleFormControlFile1">Example file input</label>
+                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        </div> -->
+
+                        <button type="button" class="btn btn-primary" id="submit">Submit</button>
+                    </form>
+                </div>
+                <div class="col"></div>
             </div>
+
         </div>
     </div>
+
+    <script src="../JavaScript/addMovie.js" defer></script>
 </body>
 
 </html>
