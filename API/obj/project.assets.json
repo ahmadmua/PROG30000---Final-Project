@@ -2426,31 +2426,24 @@
     ]
   },
   "packageFolders": {
-    "G:\\Users\\jorda\\.nuget\\packages\\": {},
-    "G:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/Users/cammisuli/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\Users\\jorda\\Desktop\\MovieDatabase_FinalProject\\API\\API.csproj",
+      "projectUniqueName": "/Users/cammisuli/Desktop/PROG30000---Final-Project/API/API.csproj",
       "projectName": "API",
-      "projectPath": "G:\\Users\\jorda\\Desktop\\MovieDatabase_FinalProject\\API\\API.csproj",
-      "packagesPath": "G:\\Users\\jorda\\.nuget\\packages\\",
-      "outputPath": "G:\\Users\\jorda\\Desktop\\MovieDatabase_FinalProject\\API\\obj\\",
+      "projectPath": "/Users/cammisuli/Desktop/PROG30000---Final-Project/API/API.csproj",
+      "packagesPath": "/Users/cammisuli/.nuget/packages/",
+      "outputPath": "/Users/cammisuli/Desktop/PROG30000---Final-Project/API/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "G:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "G:\\Users\\jorda\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "G:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "G:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/cammisuli/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "G:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2527,7 +2520,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "G:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
       }
     }
   }
