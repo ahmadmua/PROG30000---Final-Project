@@ -75,14 +75,11 @@ body {
 
 }
 
-.divTop {
+#myUL>li {
     margin-top: 2em;
     margin-bottom: 2em;
     /* padding-left: 2em; */
     color: white;
     font-size: xx-large;
-}
-
-label {
-    color: white;
+    /* list-style-type: none; */
 }
