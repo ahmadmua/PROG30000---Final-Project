@@ -38,6 +38,15 @@
     margin: 5px;
 }
 
+.LikeBtn{
+    background-color: red;
+    border-color: red;
+}
+
+.WatchBtn{
+    background-color: darkgrey;
+    border-color: darkgrey;
+}
 
 .carousel-control-prev,
 .carousel-control-next {
