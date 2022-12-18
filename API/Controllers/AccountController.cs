@@ -38,6 +38,7 @@ namespace API.Controllers
                 Review = ""
             };
 
+
             var result = await _userManager.CreateAsync(user, registerDto.Password);
 
             if(result.Succeeded){
@@ -47,6 +48,17 @@ namespace API.Controllers
             return BadRequest(result.Errors);
             
         }
+
+
+         [HttpPost("signOut")]
+        public async Task<IActionResult> SignOutAsync(){
+
+            await _signInManager.SignOutAsync();
+            
+            return Ok();
+
+        }
+
 
         [HttpGet("username")]
         public async Task<IActionResult> GetUserName(){

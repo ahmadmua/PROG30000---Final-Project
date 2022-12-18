@@ -13,23 +13,22 @@ public class UnitTest1
 
         private SignInManager<AppUser> _signInManager;
         private UserManager<AppUser> _userManager;
+
+        
         
     
     [Fact]
     public async Task LoginTestAsync()
     {
 
-                var user = new AppUser() { 
-                
-                    Email = "JohnDoe@gmail.com",
-                    UserName = "JohnDoe",
-                    Review = ""
-                
-                };
+                 var user = new AppUser { UserName = "testuser" };
+                await _userManager.CreateAsync(user, "password");
 
-             var result = await _userManager.CreateAsync(user, "Abc123me@");
+    // Act
+    var result = await _signInManager.PasswordSignInAsync(user.UserName, "password", false, false);
 
-            Assert.True(result.Succeeded);
+    // Assert
+    Assert.True(result.Succeeded);
 
     }
 }
