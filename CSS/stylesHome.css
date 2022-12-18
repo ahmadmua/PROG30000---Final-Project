@@ -10,7 +10,7 @@
     top: 0;
     padding-left: 50px;
     padding-right: 100px;
-
+    z-index: 5;
 }
 
 
@@ -27,6 +27,7 @@
     background: rgba(40, 42, 44, 0.9);
     height: max-content;
     border-radius: 1%;
+   
 }
 
 .cardRow{

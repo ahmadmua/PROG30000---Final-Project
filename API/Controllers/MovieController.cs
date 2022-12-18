@@ -14,10 +14,10 @@ namespace API.Controllers
     public class MovieController : ControllerBase
     {
 
-        private DataContext _db;
+        private DataContext _database;
         public MovieController(DataContext db)
         {
-            _db = db;
+            _database = db;
         }
 
         //POST /api/movie/add
@@ -33,13 +33,13 @@ namespace API.Controllers
                 if (Regex.Match(movie.Release_date, pattern).Success)
                 {
 
-                    if (_db.Movies.Any(x => x.Title == movie.Title) & _db.Movies.Any(x => x.Release_date == movie.Release_date))
+                    if (_database.Movies.Any(x => x.Title == movie.Title) & _database.Movies.Any(x => x.Release_date == movie.Release_date))
                     {
                         return BadRequest("Movie already exists");
                     }
 
-                    await _db.Movies.AddAsync(movie);
-                    await _db.SaveChangesAsync();
+                    await _database.Movies.AddAsync(movie);
+                    await _database.SaveChangesAsync();
                     return Ok(movie);
                 }
 
@@ -50,6 +50,18 @@ namespace API.Controllers
             {
                 return BadRequest();
             }
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetAllMovies()
+        {
+            return Ok(_database.Movies);
+        }
+
+        [HttpGet("popularMovies")]
+        public async Task<IActionResult> GetAllPopularMovies()
+        {
+            return Ok(_database.Movies.Where(x => x.Vote_average > 5));
         }
 
     }

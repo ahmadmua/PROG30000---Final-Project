@@ -84,6 +84,20 @@ namespace API.Controllers
             return Ok(_database.Shows);
         }
 
+        [HttpGet("popularShows")]
+        public async Task<IActionResult> GetAllPopularShows()
+        {
+            return Ok(_database.Shows.Where(x => x.Vote_average > 5));
+        }
+
+        // [HttpGet("dramaShows")]
+        // public async Task<IActionResult> GetAllDramaShows()
+        // {
+        //     string pattern = @"(?:^|\W)Drama(?:$|\W)";
+            
+        //     return Ok(_database.Shows.Where(x => x.Genre == Regex.Matches(x.Genre, pattern) ));
+        // }
+
 
 
     }
