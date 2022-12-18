@@ -30,12 +30,12 @@
    
 }
 
-.cardRow{
+.cardRow {
     padding: 75px;
     width: fit-content;
 }
 
-.card{
+.card {
     margin: 5px;
     height:375px;
 }
@@ -49,24 +49,24 @@
     -webkit-box-orient: vertical;
 }
 
-.LikeBtn{
+.LikeBtn {
     background-color: red;
     border-color: red;
 }
 
-.WatchBtn{
+.WatchBtn {
     background-color: darkgrey;
     border-color: darkgrey;
 }
 
 .carousel-control-prev,
 .carousel-control-next {
-  background-color: #e1e1e1;
-  width: 5vh;
-  height: 5vh;
-  border-radius: 50%;
-  top: 50%;
-  transform: translateY(-50%);
+    background-color: #e1e1e1;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 
@@ -84,4 +84,13 @@ body {
         font-size: 3em;
     }
 
+}
+
+#myUL>li {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    /* padding-left: 2em; */
+    color: white;
+    font-size: xx-large;
+    /* list-style-type: none; */
 }
